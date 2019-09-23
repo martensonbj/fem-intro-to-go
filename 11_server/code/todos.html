@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+  body {
+    background-color: #f3f3f3;
+    padding: 25px;
+    text-align: center;
+  }
+
+  form {
+    background: #797979;
+    margin: 0 auto 50px;
+    padding: 25px;
+    width: 500px;
+  }
+
+  input {
+    border: none;
+    display: block;
+    font-size: 16px;
+    margin: 25px auto;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    background: #eaeaea; 
+  }
+
+  input[type="submit"]:hover {
+    background: white;
+    cursor: pointer;
+  }
+
+  textarea {
+    border: none;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto 25px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .list {
+    border-top: 1px solid #797979;
+    padding: 10px;
+  }
+
+  .list div {
+    background: #fff;
+    display: inline-block;
+    height: 200px;
+    margin: 10px;
+    overflow-y: scroll;
+    padding: 10px 25px;
+    width: 400px;
+  }
+
+  .list div p:first-child {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+<head>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<title>{{.PageTitle}}</title>
+</head>
+
+<script type='text/javascript'>
+</script>
+<body>
+    <h1>All Todos</h1>
+    <form action="/add-todo" method="post">
+      <input type="text" placeholder="Title" name="title">
+      <textarea placeholder="Details..." name="content"></textarea>
+      <input type="submit">
+    </form>
+    <div class="list">
+    {{if not .PageTodos }}
+      <h2>No Todos</h2>
+    {{else}}
+      {{range .PageTodos}}
+      <div>
+        <p>{{.Title}}</p>
+        <p>{{.Content}}</p>
+      </div>
+      {{end}}
+    {{end}}
+    </div>
+</body>
+</html>
+
