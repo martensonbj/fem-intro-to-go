@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-// Describer prints out a entity description
-type Describer interface {
-	describe() string
-}
+// // Describer prints out a entity description
+// type Describer interface {
+// 	describe() string
+// }
 
 // User is a single user type
 type User struct {
@@ -21,6 +21,8 @@ type Group struct {
 	spaceAvailable bool
 }
 
+// These two structs have different implementations of the `describe()` method.
+
 func (u *User) describe() string {
 	desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.FirstName, u.LastName, u.Email, u.ID)
 	return desc
@@ -31,6 +33,12 @@ func (g *Group) describe() string {
 	return desc
 }
 
+// Create a function that doesn't care what type you pass in as long as the type "satisfies the interface"
+
+// func describeHumans(human Describer) string {
+// 	return human.describe()
+// }
+
 func main() {
 	u1 := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
 	u2 := User{ID: 1, FirstName: "Humphrey", LastName: "Bogart", Email: "humphrey.bogart@gmail.com"}
@@ -39,4 +47,6 @@ func main() {
 	describeGroup := g.describe()
 	fmt.Println(describeUser)
 	fmt.Println(describeGroup)
+	// fmt.Println(describeHumans(&u1))
+	// fmt.Println(describeHumans(&g))
 }

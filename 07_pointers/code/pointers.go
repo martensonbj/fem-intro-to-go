@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+func main() {
+	var name string
+	var namePointer *string
+
+	fmt.Println("Name:", name)
+	fmt.Println("Name *:", namePointer)
+}
+
 // // ******************************************************
 
 // func main() {
@@ -28,5 +36,3 @@ import "fmt"
 // }
 
 // // ******************************************************
-
-
