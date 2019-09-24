@@ -17,7 +17,7 @@ Check out the `errors.go` file in this directory which has a code snippet from o
 In this version of error handling, we get the message: 
 `open notes.txt: no such file or directory`, but we are missing the type of erorr or any kind of stack trace indicating where this error came from. 
 
-A common approach is to manually wrap the error in a larger structure providing additional information, like a timestamp. 
+A common approach is to manually wrap the error in a larger structure providing additional information, like a timestamp, or a string indicating what happened. 
 
 ```go
 type WrappedError struct {
@@ -60,9 +60,11 @@ func (err *WrappedError) Unwrap() error {
 }
 ```
 
-// DISCUSS ERRORS AS AND IS
+Let's look at some docs.
 
-https://github.com/golang/go/issues/29934
-https://golang.org/pkg/errors/
-https://github.com/golang/go/wiki/ErrorValueFAQ
-http://ieftimov.com/post/deep-dive-in....
+## Resources
+
+- https://github.com/golang/go/issues/29934
+- https://golang.org/pkg/errors/
+- https://github.com/golang/go/wiki/ErrorValueFAQ
+- https://ieftimov.com/post/deep-dive-in-upcoming-go-error-inspection-changes/
