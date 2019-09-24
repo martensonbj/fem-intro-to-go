@@ -1,17 +1,25 @@
-# Installing Go
+# Exercise 0: Installing Go
 
-If you're installing Go for the first time, start at the section `Installing Go From Scratch`.
+## Goals: 
+- Install Go on your machine
 
-If you already have Go installed, feel free to skip installation or find the section below called `Upgrading To Go 1.13`. 
+## Setup 
+- Visit [golang.org/dl](golang.org/dl)
 
-## Installing Go From Scratch
+- If you're installing Go for the first time, start at the section `Installing Go From Scratch`.
 
-### Download Go
+- If you already have Go installed, feel free to skip installation or find the section below called `Upgrading To Go 1.13`. 
+
+## Directions
+
+### Installing Go From Scratch
+
+#### Download Go
 1. Visit [golang.org/dl](golang.org/dl) 
 2. Select the download package for your operating system
 3. Once the installation package is downloaded, double click on that package to kick off installation. 
 
-### Verify Installation
+#### Verify Installation
 1. When the installation wizard is complete, open up a terminal window and verify Go is installed with the following commands: 
 
 ```bash
@@ -22,7 +30,7 @@ go version
 => go version go1.13.1 darwi/amd64
 ```
 
-### Modify Your PATH 
+#### Modify Your PATH 
 
 1. Go checks for a certain environment variable, `GOPATH` when executing a Go program. We need to update our bash_profile to help Go find where our files will live.
 
@@ -36,7 +44,7 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 ```
 
-### Verify These Updates
+#### Verify These Updates
 
 1. Restart your terminal
 
@@ -50,7 +58,7 @@ echo $GOPATH
 => /Users/brennamartenson/go
 ```
 
-### Create a go workspace
+#### Create a go workspace
 
 We just told Go that whenever we run a Go command in our terminal (ie: `go run main.go`), it should look for those files in the GOPATH, which typically defaults to `/Users/yourusername/go`. 
 
@@ -60,7 +68,7 @@ We just told Go that whenever we run a Go command in our terminal (ie: `go run m
 
 `git clone https://github.com/martensonbj/fem-intro-to-go`
 
-### Verify Everything Is Good To GO 😉
+#### Verify Everything Is Good To GO 😉
 
 1. Change into the `go/fem-intro-to-go` directory
 
@@ -69,7 +77,7 @@ We just told Go that whenever we run a Go command in our terminal (ie: `go run m
 3. If all went well, you should see `"Hello Front End Masters!"`
 
 
-## Upgrading to Go 1.13
+### Upgrading to Go 1.13
 
 1. Verify you do have Go installed in the first place:
 
