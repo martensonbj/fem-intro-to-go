@@ -8,6 +8,8 @@
 
 - Revisit the Structs lesson (`06_structs/structs.md`) and use the `06_structs/exercise_6a.md` exercise for reference.
 
+- Option 2: Hang out in the file you used for `exercise_6a` for the rest of the exercises.
+
 - Copy the code from the solution of `06_structs/exercise_6a` into a new file called `exercise_9a.go` as a starting point.
 
 ## Directions
