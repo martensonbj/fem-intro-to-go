@@ -19,15 +19,17 @@ Within the curly braces we list a set of methods that are associated with our in
 
 Our interface `Describer` includes any type that has a method named `describe()`, which in our program includes `User` and `Group`. Any type that defines this method is said to `satisfy the Describer interface`.
 
-We can use our interface to introduce all of the entities in our program so far.
 
 ```go
 func main() {
 	u1 := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
 	u2 := User{ID: 1, FirstName: "Humphrey", LastName: "Bogart", Email: "humphrey.bogart@gmail.com"}
+
 	g := Group{role: "admin", users: []User{u1, u2}, newestUser: u2, spaceAvailable: true}
+
 	describeUser := u1.describe()
 	describeGroup := g.describe()
+
 	fmt.Println(describeUser)
 	fmt.Println(describeGroup)
 }
@@ -83,13 +85,26 @@ func (g *Group) describe() string {
 	return desc
 }
 
+// DoTheDescribing can be implemented on any type that has a describe method 
+func DoTheDescribing(d Describer) string {
+	return d.describe()
+}
+
 func main() {
 	u1 := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
 	u2 := User{ID: 1, FirstName: "Humphrey", LastName: "Bogart", Email: "humphrey.bogart@gmail.com"}
 	g := Group{role: "admin", users: []User{u1, u2}, newestUser: u2, spaceAvailable: true}
+
 	describeUser := u1.describe()
 	describeGroup := g.describe()
+
+	userDescribeWithIface := DoTheDescribing(&u1)
+	groupDescribeWithIface := DoTheDescribing(&g)
+
 	fmt.Println(describeUser)
 	fmt.Println(describeGroup)
+
+	fmt.Println(userDescribeWithIface)
+	fmt.Println(groupDescribeWithIface)
 }
 ```

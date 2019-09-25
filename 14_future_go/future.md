@@ -6,9 +6,11 @@ As of the latest survey on what GO developers struggle with most, the proposal f
 2. Generics
 3. Error Handling
 
-## Package Management & Modules
+## Package Management & Modules 
+- Think npm modules scoped to a project rather than all dependencies live in the same workspace all the time.
 
 ## Generics
+- 
 
 ##  Error Wrapping
 
@@ -62,8 +64,45 @@ func (err *WrappedError) Unwrap() error {
 
 Let's look at some docs.
 
-## Resources
+- https://golang.org/pkg/errors/
+- https://golang.org/doc/go1.13#error_wrapping
 
+```go
+package main
+
+import (
+	"errors"
+	"fmt"
+	"os"
+)
+
+func openFile() error {
+	f, err := os.Open("missingFile.txt")
+	if err != nil {
+		// return err
+		unwrapped := errors.Unwrap(fmt.Errorf("This File Is Missing: %w", err))
+		fmt.Println("unwrapped:", unwrapped)
+		return unwrapped
+	}
+	defer f.Close()
+	return nil
+}
+
+func main() {
+	err := openFile()
+	fmt.Println(err)
+	if err != nil {
+		if errors.Is(err, os.ErrNotExist) {
+			fmt.Println("File Doesnt Exist")
+		} else {
+			fmt.Println("Unknown error but its broken")
+		}
+	}
+}
+```
+
+## Resources
+- https://golang.org/doc/go1.13#error_wrapping
 - https://github.com/golang/go/issues/29934
 - https://golang.org/pkg/errors/
 - https://github.com/golang/go/wiki/ErrorValueFAQ

@@ -2,10 +2,7 @@ package main
 
 import "fmt"
 
-// // Describer prints out a entity description
-// type Describer interface {
-// 	describe() string
-// }
+// Add a Describer interface
 
 // User is a single user type
 type User struct {
@@ -35,10 +32,6 @@ func (g *Group) describe() string {
 
 // Create a function that doesn't care what type you pass in as long as the type "satisfies the interface"
 
-// func describeHumans(human Describer) string {
-// 	return human.describe()
-// }
-
 func main() {
 	u1 := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
 	u2 := User{ID: 1, FirstName: "Humphrey", LastName: "Bogart", Email: "humphrey.bogart@gmail.com"}
@@ -47,6 +40,4 @@ func main() {
 	describeGroup := g.describe()
 	fmt.Println(describeUser)
 	fmt.Println(describeGroup)
-	// fmt.Println(describeHumans(&u1))
-	// fmt.Println(describeHumans(&g))
 }
