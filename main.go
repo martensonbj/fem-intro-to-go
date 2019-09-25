@@ -1,7 +1,7 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
-	fmt.Println("Hello Front End Masters!")
-}
+// func main() {
+// 	fmt.Println("Hello Front End Masters!")
+// }

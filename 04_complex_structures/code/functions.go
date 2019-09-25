@@ -1,15 +1,13 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func printAge(age1, age2 int) (ageOfSally, ageOfBob int) {
-// 	ageOfSally = age1
-// 	ageOfBob = age2
-// 	return
-// }
+func printAge(ages ...int) {
+	for _, value := range ages {
+		fmt.Println(value)
+	}
+}
 
-// func main() {
-// 	x, y := printAge(10, 21)
-// 	fmt.Println(x)
-// 	fmt.Println(y)
-// }
+func main() {
+	printAge(16, 21, 30)
+}

@@ -10,7 +10,7 @@
 
 ## Directions
 
-1. Create a file called `exercise_3a.go` in the `03_ctrl_structures/code` directory.
+1. Create a file called `exercise_3a.go` in the `03_basic_syntax/code` directory.
 
 2. In your `main` function, declare a variable that has a value of a sentence.
 

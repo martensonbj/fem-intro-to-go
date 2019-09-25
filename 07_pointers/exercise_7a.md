@@ -14,7 +14,7 @@
 
 1. Define an instance of the User struct 
 
-2. Write a function called `updateEmail` that takes in a `User` type
+2. Write a function called `updateEmail` that takes in a `*User` type
 
 3. Update the user's email to something new 
 

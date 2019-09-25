@@ -2,6 +2,12 @@
 
 Similar to structs and variables, functions can also be bound to types.
 
+Methods are functions that care about, and are tightly linked to, state. 
+
+Think object prototype methods in JavaScript. 
+
+Methods are called on an instance of a struct.
+
 Let's revisit the `describeUser` function , and User struct, from a few examples ago:
 
 ```go
@@ -13,12 +19,12 @@ type User struct {
 }
 
 func describeUser(u User) string {
-	desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.firstName, u.lastName, u.email, u.ID)
+	desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.FirstName, u.LastName, u.Email, u.ID)
 	return desc
 }
 
 func main() {
-  user := User{ID: 1, firstName: "Marilyn", lastName: "Monroe", email: "marilyn.monroe@gmail.com"}
+  user := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
   desc := describeUser(user)
 }
 ```
@@ -33,12 +39,12 @@ We can then call the method a little differently:
 
 ```go
 func (u *User) describe() string {
-	desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.firstName, u.lastName, u.email, u.ID)
+	desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.FirstName, u.LastName, u.Email, u.ID)
 	return desc
 }
 
 func main() {
-  u := User{ID: 1, firstName: "Marilyn", lastName: "Monroe", email: "marilyn.monroe@gmail.com"}
+  u := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
   desc := u.describe()
 }
 ```
