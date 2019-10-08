@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <style>
-  
   * {
     box-sizing: border-box;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -33,7 +32,7 @@
   }
 
   input[type="submit"] {
-    background: #eaeaea; 
+    background: #eaeaea;
   }
 
   input[type="submit"]:hover {
@@ -72,32 +71,34 @@
     text-transform: uppercase;
   }
 </style>
+
 <head>
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<title>{{.PageTitle}}</title>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <title>{{.PageTitle}}</title>
 </head>
 
 <script type='text/javascript'>
 </script>
-<body>
-    <h1>All Todos</h1>
-    <form action="/add-todo" method="post">
-      <input type="text" placeholder="Title" name="title">
-      <textarea placeholder="Details..." name="content"></textarea>
-      <input type="submit">
-    </form>
-    <div class="list">
-    {{if not .PageTodos }}
-      <h2>No Todos</h2>
-    {{else}}
-      {{range .PageTodos}}
-      <div>
-        <p>{{.Title}}</p>
-        <p>{{.Content}}</p>
-      </div>
-      {{end}}
-    {{end}}
-    </div>
-</body>
-</html>
 
+<body>
+  <h1>All Todos</h1>
+  <form action="/add-todo/" method="post">
+    <input type="text" placeholder="Title" name="title">
+    <textarea placeholder="Details..." name="content"></textarea>
+    <input type="submit">
+  </form>
+  <div class="list">
+    {{if not .PageTodos }}
+    <h2>No Todos</h2>
+    {{else}}
+    {{range .PageTodos}}
+    <div>
+      <p>{{.Title}}</p>
+      <p>{{.Content}}</p>
+    </div>
+    {{end}}
+    {{end}}
+  </div>
+</body>
+
+</html>
