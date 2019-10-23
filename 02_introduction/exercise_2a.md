@@ -7,7 +7,7 @@
 
 ## Setup
 
-Create a file called `exercise_2a.go` in the `02_introduction/code` directory.
+Create a file called `exercise_2a.go` in the `code/02_introduction` directory.
 
 If you're having environment issues, you can also use a sandbox like [Repl.it](https://repl.it/languages/go), or the [Go Playground](https://play.golang.org/).
 

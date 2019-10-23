@@ -64,7 +64,7 @@ We just told Go that whenever we run a Go command in our terminal (ie: `go run m
 
 1. Navigate to your home directory (for me that is `/Users/brennamartenson`), and create a `go` directory with `mkdir go`.
 
-2. Change into the go directory with `cd go`, and clone the repo for this workshop into the `go` directory.
+2. Change into the go directory with `cd go`, and clone the repo for this course into the `go` directory.
 
 `git clone https://github.com/martensonbj/fem-intro-to-go`
 

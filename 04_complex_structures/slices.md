@@ -106,7 +106,7 @@ What if you want to increase the length of a slice?
 ### Slice Helper Methods
 
 There are built in helper methods associated with the `slice` type, similar to
-prototype methods in JavaScript. The one we will use later in this workshop is
+prototype methods in JavaScript. The one we will use later in this course is
 `append`.
 
 #### Append:
