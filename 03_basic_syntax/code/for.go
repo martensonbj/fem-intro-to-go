@@ -1,6 +1,6 @@
 // // Uncomment the entire file
 
-// package main
+package main
 
 // import "fmt"
 
@@ -8,7 +8,7 @@
 
 // 	// 	// ****************************
 
-// 	i := 1
+// 	// i := 1
 
 // 	for i := 1; i <= 100; i++ {
 // 		fmt.Println(i)

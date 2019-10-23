@@ -12,7 +12,7 @@
 
 ## Directions
 
-1. Refactor the `describeUser` code to be a method (this should be a repetition of what was just completed in the workshop).
+1. Refactor the `describeUser` code to be a method (this should be a repetition of what was just completed in the course).
 
 2. Modify the `describeGroup` function to be a method called `describe()` that receives a `Group` type.
 

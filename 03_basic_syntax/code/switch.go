@@ -1,6 +1,6 @@
 // // Uncomment the entire file
 
-// package main
+package main
 
 // import "fmt"
 
