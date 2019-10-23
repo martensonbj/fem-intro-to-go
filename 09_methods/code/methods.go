@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// User is a generic user type
+// User is a user type
 type User struct {
 	ID                         int
 	FirstName, LastName, Email string

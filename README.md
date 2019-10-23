@@ -1,6 +1,6 @@
 # Getting Started with Go
 
-Prepared for Front End Masters
+Prepared for Frontend Masters
 September, 2019
 
 ## How To Use This Repo
