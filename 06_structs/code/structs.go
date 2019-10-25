@@ -11,7 +11,7 @@ type User struct {
 // // User is a user type
 // type User struct {
 // ID					       int
-// First Name, LastName, Email string
+// FirstName, LastName, Email string
 // }
 
 func main() {
