@@ -8,20 +8,17 @@
     font-weight: 100;
     letter-spacing: 1px;
   }
-
   body {
     background-color: #f3f3f3;
     padding: 25px;
     text-align: center;
   }
-
   form {
     background: #797979;
     margin: 0 auto 50px;
     padding: 25px;
     width: 500px;
   }
-
   input {
     border: none;
     display: block;
@@ -31,16 +28,13 @@
     padding: 10px;
     width: 100%;
   }
-
   input[type="submit"] {
     background: #eaeaea; 
   }
-
   input[type="submit"]:hover {
     background: white;
     cursor: pointer;
   }
-
   textarea {
     border: none;
     display: block;
@@ -50,12 +44,10 @@
     padding: 10px;
     width: 100%;
   }
-
   .list {
     border-top: 1px solid #797979;
     padding: 10px;
   }
-
   .list div {
     background: #fff;
     display: inline-block;
@@ -65,7 +57,6 @@
     padding: 10px 25px;
     width: 400px;
   }
-
   .list div p:first-child {
     font-weight: 300;
     letter-spacing: 2px;
@@ -81,7 +72,7 @@
 </script>
 <body>
     <h1>All Todos</h1>
-    <form action="/add-todo" method="post">
+    <form action="/add-todo/" method="post">
       <input type="text" placeholder="Title" name="title">
       <textarea placeholder="Details..." name="content"></textarea>
       <input type="submit">
@@ -100,4 +91,3 @@
     </div>
 </body>
 </html>
-
