@@ -1,4 +1,4 @@
-// package main
+package main
 
 // import "fmt"
 
@@ -8,8 +8,8 @@
 // 	return
 // }
 
-// func main() {
-// 	x, y := printAge(10, 21)
-// 	fmt.Println(x)
-// 	fmt.Println(y)
-// }
+func main() {
+	// 	x, y := printAge(10, 21)
+	// 	fmt.Println(x)
+	// 	fmt.Println(y)
+}

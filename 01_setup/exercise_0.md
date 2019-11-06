@@ -36,7 +36,7 @@ go version
 
 2. In a code editor, open up your `.bash_profile` which should be located in your home directory. 
 
-3. Add the following lines to the bottom of the file (or wherever you export your PATH environment varibales)
+3. Add the following lines to the bottom of the file (or wherever you export your PATH environment variables)
 
 ```bash
 export GOPATH=$HOME/go
@@ -64,7 +64,9 @@ We just told Go that whenever we run a Go command in our terminal (ie: `go run m
 
 1. Navigate to your home directory (for me that is `/Users/brennamartenson`), and create a `go` directory with `mkdir go`.
 
-2. Change into the go directory with `cd go`, and clone the repo for this workshop into the `go` directory.
+2. Change into the go directory with `cd go`, then `mkdir src`, and change into the directory with `cd src`.
+
+3. Clone the repo for this course into the `go` directory.
 
 `git clone https://github.com/martensonbj/fem-intro-to-go`
 

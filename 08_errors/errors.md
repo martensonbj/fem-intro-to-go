@@ -67,5 +67,5 @@ func main() {
 
 ## Error Handling in Go 1.13
 
-We will cover the newest approach to error handling released in Go 1.13 towards the end of the workshop 
+We will cover the newest approach to error handling released in Go 1.13 towards the end of the course 
 

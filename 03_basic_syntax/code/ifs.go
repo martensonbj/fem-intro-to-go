@@ -1,10 +1,15 @@
 // // Uncomment this entire file
 
-// package main
+package main
 
-// import "fmt"
+// import (
+// 	"fmt",
+// 	"errors"
+// )
 
-// // func someFunction() {}
+// func someFunction() error {
+// 	return errors.New("some error")
+// }
 
 // func main() {
 

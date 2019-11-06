@@ -18,7 +18,7 @@
 
 2. Add an appropriately named test file, and write a test for this function.
 
-3. Run the test with `run test` and make sure its passing.
+3. Run the test with `go test` and make sure it's passing.
 
 ### Part 2: Use TDD to Write A Function
 

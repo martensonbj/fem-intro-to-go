@@ -27,7 +27,7 @@ Similarly, you have `else if` and `else` blocks.
 
 ### An Intro to Error Handling
 
-We will discuss error handling in depth later in this workshop, but lets dive in
+We will discuss error handling in depth later in this course, but lets dive in
 a bit now.
 
 First of all, a noticeable aspect of Go is the fact that as the developer you
