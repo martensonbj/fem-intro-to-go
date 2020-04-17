@@ -5,7 +5,7 @@ import (
 )
 
 // BaseURL is the base endpoint for the star wars API
-const BaseURL = "https://swapi.co/api/"
+const BaseURL = "https://swapi.dev/api/"
 
 func main() {
 	fmt.Println(BaseURL)
