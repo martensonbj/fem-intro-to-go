@@ -11,7 +11,11 @@ The master branch of this repo is a starting point that is meant to go along wit
 
 ## Setup
 
-To take full advantage of the examples and exercises in this repo, make sure to [download and install Go](golang.org/dl). Additional instructions for downloading are located in the course. 
+To take full advantage of the examples and exercises in this repo, make sure to [download and install Go](golang.org/dl). Additional instructions for downloading are located in the course.
+
+## Errata
+
+- The URL for the Star Wars API has been updated to https://swapi.dev
 
 ## Extra Resources
 
