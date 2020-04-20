@@ -1,11 +1,11 @@
-# Getting Started with Go
+# Go for JavaScript Developers
 
 Prepared for Frontend Masters
 September, 2019
 
 ## How To Use This Repo
 
-Welcome to [Getting Started with Go][go]!
+Welcome to [Go for JavaScript Developers][go]!
 
 The master branch of this repo is a starting point that is meant to go along with a series of [slides][slides]. Each chapter contains markdown files that include instructions for the exercise as well as teaching materials. All Go files are located under the code/ directory of each chapter that include both teaching materials and solutions to the exercises (if applicable).
 
