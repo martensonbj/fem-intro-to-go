@@ -101,6 +101,6 @@ go version
 => -bash: go: command not found
 ```
 
-4. Visit [golang.org/dl](golang.org/dl) to install the latest Go.
+4. Visit [golang.org/dl](https://golang.org/dl) to install the latest Go.
 
 
