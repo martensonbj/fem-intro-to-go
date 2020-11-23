@@ -4,7 +4,7 @@
 - Install Go on your machine
 
 ## Setup 
-- Visit [golang.org/dl](golang.org/dl)
+- Visit [golang.org/dl](https://golang.org/dl)
 
 - If you're installing Go for the first time, start at the section `Installing Go From Scratch`.
 
@@ -15,7 +15,7 @@
 ### Installing Go From Scratch
 
 #### Download Go
-1. Visit [golang.org/dl](golang.org/dl) 
+1. Visit [golang.org/dl](https://golang.org/dl) 
 2. Select the download package for your operating system
 3. Once the installation package is downloaded, double click on that package to kick off installation. 
 
@@ -101,6 +101,6 @@ go version
 => -bash: go: command not found
 ```
 
-4. Visit [golang.org/dl](golang.org/dl) to install the latest Go.
+4. Visit [golang.org/dl](https://golang.org/dl) to install the latest Go.
 
 
