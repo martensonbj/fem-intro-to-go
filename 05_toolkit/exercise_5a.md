@@ -1,11 +1,11 @@
 # Exercise 5a: Testing the Add Method
 
 ## Goals
- 
+
 - Write a unit test
 - Use the TDD method to implement code to make a test pass
 
-## Setup 
+## Setup
 
 - Reference the `utils/math.go` file that contains our previously written `Add` function.
 - Create a `strings_test.go` file in the utils directory, and copy the test provided at the bottom of this file (this will be used for Part 2)
@@ -38,7 +38,7 @@ func TestMakeExcited(t *testing.T) {
 	expected := "OMG SO EXCITING!"
 	actual := MakeExcited("omg so exciting")
 	if actual != expected {
-		t.Errorf("Average was incorrect! Expected: %s, Actual: %s", expected, actual)
+		t.Errorf("String was incorrect! Expected: %s, Actual: %s", expected, actual)
 	}
 }
 ```

@@ -28,7 +28,7 @@ import "testing"
 func TestAverage(t *testing.T) {
   // the value you expect to get from the tested function
   expected := 4
-  actual := utils.average(1, 2, 3)
+  actual := average(1, 2, 3)  // can be directly accessible
   if actual != expected {
     t.Errorf("Average was incorrect! Expected: %d, Actual: %d", expected, actual)
   }
